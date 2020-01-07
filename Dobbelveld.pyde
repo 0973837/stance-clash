@@ -2,7 +2,7 @@ import random
 
 #MainScreen
 def setup():
-    global tijd, DobbelsteenImg, aap1, aap2, aap3, aap4, aap5, TurnTeller, Background, Dio, Jotaro, Polnareff, Kakyion, Mrjoestar, Dobbel_N, DobbelN, Dobbel_D, DobbelD, Dobbel_P, DobbelP, Dobbel_K, DobbelK, DobbelK1, Dobbel, Dice_1, Dice_2, Dice_3, Dice_4, Dice_5, Dice_6                                         
+    global tijd, DobbelsteenImg, aap1, aap2, aap3, aap4, aap5, TurnTeller, Background, Dio, Jotaro, Polnareff, Kakyion, Mrjoestar, Dobbel_N, DobbelN, Dobbel_D, DobbelD, Dobbel_P, DobbelP, Dobbel_K, DobbelK, DobbelK1, Dobbel, Kruis, Dice_1, Dice_2, Dice_3, Dice_4, Dice_5, Dice_6                                         
     fullScreen()
     
 #Variables
@@ -18,6 +18,7 @@ def setup():
     Dice_3 = loadImage("Dice #3.png")
     Dice_2 = loadImage("Dice #2.png")
     Dice_1 = loadImage("Dice #1.png")
+    Kruis = loadImage("kruis.png")
     
     background(Background)
     
@@ -43,12 +44,19 @@ def draw():
     
 #De dobbel knop
     noFill()
+    noStroke()
     rect(((width//2)-150), ((height//2)-150), 300, 300,)
-    
+
 #Afbeelding in de dobbel knop
-    image(DobbelsteenImg, ((width//2)-135), ((height//2)-135))
+    image(DobbelsteenImg, ((width//2)-190), ((height//2)-190),380, 380)
+            
+#    if mouseX > ((width//2)-150) and mouseX < ((width//2)+150) and mouseY > ((height//2)-150) and mouseY < ((height//2)+150):
+#        tint(127, 0, 0)
+#        image(DobbelsteenImg, ((width//2)-150), ((height//2)-150),300, 300)
+#    else:
+#        image(DobbelsteenImg, ((width//2)-150), ((height//2)-150),300, 300)
     
-    
+
 ################################################################################################# TURN ONDERDEEL ##########################################################################################################################
     
 #Turn veld
@@ -152,21 +160,21 @@ def draw():
         text("TURN", 405, 90)
 
 #Dobbel indicatie test
-    if Dio == True:
-        fill(50)
-        rect(((width//2)-150), ((height//2)-150), 40, 40,)
-    elif Kakyion == True:
-        fill(100)
-        rect(((width//2)-150), ((height//2)-150), 40, 40,)
-    elif Polnareff == True:
-        fill(150)
-        rect(((width//2)-150), ((height//2)-150), 40, 40,)
-    elif Jotaro == True:
-        fill(200)
-        rect(((width//2)-150), ((height//2)-150), 40, 40,)
-    elif Mrjoestar == True:
-        fill(250)
-        rect(((width//2)-150), ((height//2)-150), 40, 40,)
+#    if Dio == True:
+#        fill(50)
+#        rect(((width//2)-150), ((height//2)-150), 40, 40,)
+#    elif Kakyion == True:
+#        fill(100)
+#        rect(((width//2)-150), ((height//2)-150), 40, 40,)
+#    elif Polnareff == True:
+#        fill(150)
+#        rect(((width//2)-150), ((height//2)-150), 40, 40,)
+#    elif Jotaro == True:
+#        fill(200)
+#        rect(((width//2)-150), ((height//2)-150), 40, 40,)
+#    elif Mrjoestar == True:
+#        fill(250)
+#        rect(((width//2)-150), ((height//2)-150), 40, 40,)
         
 #Karakter koppel 
     Dio = aap1
@@ -174,12 +182,6 @@ def draw():
     Polnareff = aap3
     Jotaro = aap4
     Mrjoestar = aap5
-    
-######################################################################### ACHTERGROND ############################################################################################################
-    
-#Background
-    #background(Background)
-    
     
 ######################################################################### KLIK ONDERDELEN ###########################################################################################################
 
@@ -209,45 +211,88 @@ def mousePressed():
 ############################################################################# DOBBELSTENEN ##############################################################################################################    
     
 def DobbelNormaal():
-    global Dobbel_N, DobbelN, Dice_1, Dice_2, Dice_3, Dice_4, Dice_5, Dice_6
+    global Dobbel_N, DobbelN, Dice_1, Dice_2, Dice_3, Dice_4, Dice_5, Dice_6, Kruis
     Dobbel_N = [1,2,3,4,5,6]
     DobbelN = random.choice(Dobbel_N)
     if DobbelN == 1:
-        image(Dice_1, ((width//2)-135), ((height//2)-135))
+        image(Dice_1, ((width//2)-75), ((height//2)-400), 150, 150)
     elif DobbelN == 2:
-        image(Dice_2, ((width//2)-135), ((height//2)-135))
+        image(Dice_2, ((width//2)-75), ((height//2)-400), 150, 150)
     elif DobbelN == 3:
-        image(Dice_3, ((width//2)-135), ((height//2)-135))
+        image(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)
     elif DobbelN == 4:
-        image(Dice_4, ((width//2)-135), ((height//2)-135))
+        image(Dice_4, ((width//2)-75), ((height//2)-400), 150, 150)
     elif DobbelN == 5:
-        image(Dice_5, ((width//2)-135), ((height//2)-135))
+        image(Dice_5, ((width//2)-75), ((height//2)-400), 150, 150)
     elif DobbelN == 6:
-        image(Dice_6, ((width//2)-135), ((height//2)-135))
+        image(Dice_6, ((width//2)-75), ((height//2)-400), 150, 150)
     
 def DobbelDio():
     global Dobbel_D, DobbelD
     Dobbel_D = [1,2,3,4,5,0]
     DobbelD = random.choice(Dobbel_D)
-    print(DobbelD)
+    if DobbelD == 1:
+        image(Dice_1, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelD == 2:
+        image(Dice_2, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelD == 3:
+        image(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelD == 4:
+        image(Dice_4, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelD == 5:
+        image(Dice_5, ((width//2)-75), ((height//2)-400), 150, 150)
+    else:
+        image(Kruis, ((width//2)-75), ((height//2)-400), 150, 150)
     
 def DobbelPolnareff():
     global Dobbel_P, DobbelP
-    
     Dobbel_P = [1,2,3,4,5,6,7,8,9,10,11,12]
     DobbelP = random.choice(Dobbel_P)
-    if DobbelP <= 3:
-        DobbelP = 2
-    print(DobbelP)
+    if DobbelP == 1:
+        image(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelP == 2:
+        image(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelP == 3:
+        image(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelP == 4:
+        image(Dice_4, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelP == 5:
+        image(Dice_5, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelP == 6:
+        image(Dice_6, ((width//2)-75), ((height//2)-400), 150, 150)
+    elif DobbelP == 7:
+        image(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150)
+        image(Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)
+    elif DobbelP == 8:
+        image(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150)
+        image(Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)
+    elif DobbelP == 9:
+        image(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150)
+        image(Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)
+    elif DobbelP == 10:
+        image(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150)
+        image(Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)
+    elif DobbelP == 11:
+        image(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150)
+        image(Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)
+    elif DobbelP == 12:
+        image(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150)
+        image(Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)
     
 def DobbelKakyion():
     global Dobbel_K, DobbelK, DobbelK1
-    
     Dobbel_K = [1,2,3,4]
     DobbelK = random.choice(Dobbel_K)
     DobbelK1 = 1
     while DobbelK1 <= DobbelK:
-        print(DobbelK1)
+        if DobbelK == 1:
+            image(Dice_1, ((width//2)-263), ((height//2)-375), 125, 125)
+        elif DobbelK == 2:
+            image(Dice_2, ((width//2)-137), ((height//2)-375), 125, 125)
+        elif DobbelK == 3:
+            image(Dice_3, ((width//2)-8), ((height//2)-375), 125, 125)
+        elif DobbelK == 4:
+            image(Dice_4, ((width//2)+122), ((height//2)-375), 125, 125)
         DobbelK1 = DobbelK1 + 1
         
 ############################################################################# DOBBELSTEEN PLAATJES ############################################################################################################
