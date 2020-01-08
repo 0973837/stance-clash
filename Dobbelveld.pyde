@@ -322,16 +322,25 @@ def DobbelKakyion():
     global Dobbel_K, DobbelK, DobbelK1
     Dobbel_K = [1,2,3,4]
     DobbelK = random.choice(Dobbel_K)
-    DobbelK1 = 1
-    while DobbelK1 <= DobbelK:
-        if DobbelK == 1:
-            image(Dice_1, ((width//2)-263), ((height//2)-375), 125, 125)
-        elif DobbelK == 2:
-            image(Dice_2, ((width//2)-137), ((height//2)-375), 125, 125)
-        elif DobbelK == 3:
-            image(Dice_3, ((width//2)-8), ((height//2)-375), 125, 125)
-        elif DobbelK == 4:
-            image(Dice_4, ((width//2)+122), ((height//2)-375), 125, 125)
-        DobbelK1 = DobbelK1 + 1
+    if DobbelK == 1:
+        image(Kruis, ((width//2)+122), ((height//2)-375), 125, 125)
+        image(Kruis, ((width//2)-8), ((height//2)-375), 125, 125)
+        image(Kruis, ((width//2)-137), ((height//2)-375), 125, 125)
+        image(Dice_1, ((width//2)-263), ((height//2)-375), 125, 125)
+    elif DobbelK == 2:
+        image(Kruis, ((width//2)+122), ((height//2)-375), 125, 125)
+        image(Kruis, ((width//2)-8), ((height//2)-375), 125, 125)
+        image(Dice_2, ((width//2)-137), ((height//2)-375), 125, 125)
+        image(Dice_1, ((width//2)-263), ((height//2)-375), 125, 125)
+    elif DobbelK == 3:
+        image(Kruis, ((width//2)+122), ((height//2)-375), 125, 125)
+        image(Dice_3, ((width//2)-8), ((height//2)-375), 125, 125)
+        image(Dice_2, ((width//2)-137), ((height//2)-375), 125, 125)
+        image(Dice_1, ((width//2)-263), ((height//2)-375), 125, 125)
+    elif DobbelK == 4:
+        image(Dice_4, ((width//2)+122), ((height//2)-375), 125, 125)
+        image(Dice_3, ((width//2)-8), ((height//2)-375), 125, 125)
+        image(Dice_2, ((width//2)-137), ((height//2)-375), 125, 125)
+        image(Dice_1, ((width//2)-263), ((height//2)-375), 125, 125)
         
 ############################################################################# DOBBELSTEEN PLAATJES ############################################################################################################
