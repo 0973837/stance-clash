@@ -20,5 +20,11 @@ def draw():
     image(polnareffImg, 950, 100, 150, 100)
     image(kokyoinImg, 350, 300, 150, 100)
     image(mrjoestarImg, 750, 300, 150, 100)
+    textSize(40)
+    text("JOTARO", 150, 250)
+    text("DIO", 590, 250)
+    text("POLNAREFF", 912, 250)
+    text("KAKYOIN", 338, 450)
+    text("MR JOESTAR", 710, 450)
     x = buttons[1]
     rectFromDict(x)
