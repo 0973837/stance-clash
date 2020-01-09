@@ -8,7 +8,7 @@ def setup():
 
 def draw():
     #global achtergrond
-    background("#938887")
+    background("#FF5AFF")
     textSize(40)
     fill(5,5,5)
     text("Mag 2x gooien", 150, 300)

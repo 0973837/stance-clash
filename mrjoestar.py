@@ -5,7 +5,7 @@ def setup():
     size(1920,1080)
 
 def draw():
-    background("#938887")
+    background("#61FF5A")
     textSize(40)
     fill(5,5,5)
     text("Kan 1x per beurt de kaart die de speler van de stapel", 150, 300)

@@ -7,7 +7,7 @@ def setup():
 
 def draw():
     #global achtergrond
-    background("#938887")
+    background("#5AF8FF")
     textSize(40)
     fill(5,5,5)
     text("Kan om de 3 beurten een kaart pakken", 150, 300)

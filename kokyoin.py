@@ -2,11 +2,11 @@ from btn import *
 
 
 def setup():
-    size(1920, 1080)
+    size(1920,1080)
 
 
 def draw():
-    background("#938887")
+    background("#FFFF5A")
     textSize(40)
     fill(5,5,5)
     text("Mag kiezen hoeveel stappen als het maar onder de", 150, 300)
