@@ -294,6 +294,28 @@ def draw():
         fill(255,0,0)
         text('DEAD', 1790, 500)
     
+    if selectedNumber == 0:
+        fill(232, 220, 220, 50)
+        strokeWeight(4)
+        rect(1330, 63, 100, 50, 10)
+    if selectedNumber == 1:
+        fill(232, 220, 220, 50)
+        strokeWeight(4)
+        rect(1330, 163, 200, 50, 10)
+    if selectedNumber == 2:
+        fill(232, 220, 220, 50)
+        strokeWeight(4)
+        rect(1330, 263, 200, 50, 10)
+    if selectedNumber == 3:
+        fill(232, 220, 220, 50)
+        strokeWeight(4)
+        rect(1330, 363, 200, 50, 10)
+    if selectedNumber == 4:
+        fill(232, 220, 220, 50)
+        strokeWeight(4)
+        rect(1330, 463, 200, 50, 10)
+
+    
 ######################################################################### KLIK ONDERDELEN ###########################################################################################################
 
 def mousePressed():
@@ -322,37 +344,47 @@ def mousePressed():
     #levensteller
     if selectedNumber == 0:
         if checkButton(buttons[15]):
-            currentNumber1 -= 1
+            if currentNumber1 != 0:
+                currentNumber1 -= 1 
         if checkButton(buttons[16]):
-            currentNumber1 += 1
+            if currentNumber1 != 0:
+                currentNumber1 += 1
         if checkButton(buttons[17]):
             selectedNumber = 1
     elif selectedNumber == 1:
         if checkButton(buttons[15]):
-            currentNumber2 -= 1
+            if currentNumber2 != 0:
+                currentNumber2 -= 1 
         if checkButton(buttons[16]):
-            currentNumber2 += 1
+            if currentNumber1 != 0:
+                currentNumber2 += 1
         if checkButton(buttons[17]):
             selectedNumber = 2
     elif selectedNumber == 2:
         if checkButton(buttons[15]):
-            currentNumber3 -= 1
+            if currentNumber3 != 0:
+                currentNumber3 -= 1 
         if checkButton(buttons[16]):
-            currentNumber3 += 1
+            if currentNumber1 != 0:
+                currentNumber3 += 1
         if checkButton(buttons[17]):
             selectedNumber = 3
     elif selectedNumber == 3:
         if checkButton(buttons[15]):
-            currentNumber4 -= 1
+            if currentNumber4 != 0:
+                currentNumber4 -= 1        
         if checkButton(buttons[16]):
-            currentNumber4 += 1
+            if currentNumber1 != 0:
+                currentNumber4 += 1
         if checkButton(buttons[17]):
             selectedNumber = 4
     elif selectedNumber == 4:
         if checkButton(buttons[15]):
-            currentNumber5 -= 1
+            if currentNumber5 != 0:
+                currentNumber5 -= 1
         if checkButton(buttons[16]):
-            currentNumber5 += 1
+            if currentNumber1 != 0:
+                currentNumber5 += 1
         if checkButton(buttons[17]):
             selectedNumber = 0
     else:

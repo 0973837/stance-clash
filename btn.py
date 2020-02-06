@@ -175,7 +175,7 @@ kaartButton = {
     "textHeight": 80,
     "textWidth": 200,
     "textColor": color(255),
-    "buttonBackgroundColor": color(100,100,150),
+    "buttonBackgroundColor": color(100,100,150, 150),
 }
 
 minButton = {
