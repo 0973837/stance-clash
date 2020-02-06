@@ -442,28 +442,76 @@ def DobbelPolnareff():
     Dobbel_P = [1,2,3,4,5,6,7,8,9,10,11,12]
     DobbelP = random.choice(Dobbel_P)
     if DobbelP == 1:
-        Dice_To_Draw = [(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_1, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 2:
-        Dice_To_Draw = [(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_1, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 3:
-        Dice_To_Draw = [(Dice_3, ((width//2)-75), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_1, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 4:
-        Dice_To_Draw = [(Dice_4, ((width//2)-75), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_1, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 5:
-        Dice_To_Draw = [(Dice_5, ((width//2)-75), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_1, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 6:
-        Dice_To_Draw = [(Dice_6, ((width//2)-75), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_1, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 7:
-        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_2, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 8:
-        Dic,_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
+        Dic,_To_Draw = [(Dice_2, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 9:
-        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_2, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 10:
-        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_2, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 11:
-        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
+        Dice_To_Draw = [(Dice_2, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
     elif DobbelP == 12:
+        Dice_To_Draw = [(Dice_2, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 13:
+        Dice_To_Draw = [(Dice_3, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 14:
+        Dic,_To_Draw = [(Dice_3, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 15:
+        Dice_To_Draw = [(Dice_3, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 116:
+        Dice_To_Draw = [(Dice_3, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 17:
+        Dice_To_Draw = [(Dice_3, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 18:
+        Dice_To_Draw = [(Dice_3, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 19:
+        Dice_To_Draw = [(Dice_4, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 20:
+        Dic,_To_Draw = [(Dice_4, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 21:
+        Dice_To_Draw = [(Dice_4, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 22:
+        Dice_To_Draw = [(Dice_4, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 23:
+        Dice_To_Draw = [(Dice_4, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 24:
+        Dice_To_Draw = [(Dice_4, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 25:
+        Dice_To_Draw = [(Dice_5, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 26:
+        Dic,_To_Draw = [(Dice_5, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 27:
+        Dice_To_Draw = [(Dice_5, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 28:
+        Dice_To_Draw = [(Dice_5, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 29:
+        Dice_To_Draw = [(Dice_5, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 30:
+        Dice_To_Draw = [(Dice_5, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 31:
+        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_1, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 32:
+        Dic,_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_2, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 33:
+        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_3, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 34:
+        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_4, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 35:
+        Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_5, ((width//2)-155), ((height//2)-400), 150, 150)]
+    elif DobbelP == 36:
         Dice_To_Draw = [(Dice_6, ((width//2)+5), ((height//2)-400), 150, 150), (Dice_6, ((width//2)-155), ((height//2)-400), 150, 150)]
     
 def DobbelKakyion():
